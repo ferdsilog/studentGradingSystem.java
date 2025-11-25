@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-
 public class StudentGradingSystem {
     public static void main(String[] args) {
         int numOfSubjects = 8;
@@ -9,6 +8,11 @@ public class StudentGradingSystem {
         float[] grades = new float[8];
         float totalGrades = 0;
         double average = 0;
+
+     //Input student name and grades
+     //Compute average
+     //Determine Pass/Fail
+     //Display summary
 
         Scanner scanner = new Scanner(System.in);
 
@@ -32,8 +36,6 @@ public class StudentGradingSystem {
             grades[i] = input;
             totalGrades += input;
         }
-
-
 
         System.out.println("---Summary-----");
         System.out.println("Name : " + name );
@@ -68,13 +70,6 @@ public class StudentGradingSystem {
             System.out.println("Better Luck Next Time!");
         }
 
-        //Input student name and grades
-
-        //Compute average
-
-        //Determine Pass/Fail
-
-       //Display summary
+        scanner.close();
     }
-
 }
